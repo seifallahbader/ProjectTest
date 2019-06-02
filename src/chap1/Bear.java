@@ -2,7 +2,7 @@ package chap1;
 
 /**
  *
- * javaDoc test
+ * javaDoc Bear
  *
  */
 public class Bear

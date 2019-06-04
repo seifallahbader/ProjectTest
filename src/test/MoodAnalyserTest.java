@@ -10,10 +10,19 @@ public class MoodAnalyserTest
         @Test
         public void testMoodAnalyser() throws Exception
         {
-             MoodAnalyser modAnalyser = new MoodAnalyser();
+             MoodAnalyser moodAnalyser = new MoodAnalyser();
 
-             String mood = modAnalyser.analyseMood("this is my message");
+             String mood = moodAnalyser.analyseMood("this is my message");
 
-            Assert.assertThat(mood, CoreMatchers.is(value:"MY"));
+            Assert.assertThat(mood, CoreMatchers.is( "MY"));
+        }
+
+        @Test
+        public void happyMessage() throws Exception
+        {
+            MoodAnalyser moodAnalyser = new MoodAnalyser();
+            String mood = moodAnalyser.analyseMood("this is my happy message");
+
+            Assert.assertThat(mood, CoreMatchers.is("Happy"));
         }
     }

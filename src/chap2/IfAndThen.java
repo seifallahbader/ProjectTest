@@ -2,7 +2,7 @@ package chap2;
 
 public class IfAndThen
     {
-        static int hourOfDay = 10;
+        static int hourOfDay = 16;
         public static void main(String[] args)
         {
             if(hourOfDay < 15)
@@ -17,8 +17,9 @@ public class IfAndThen
             }
 
             //example BooleanExpression ? expression 1 : expression2
-            int y = 4;
-            int x = (y > 5) ? (2 * y) : (3 * y);
+            int y = 6;
+            final int x;
+            x = (y > 5) ? (2 * y) : (3 * y);
             System.out.println(x);
         }
     }
